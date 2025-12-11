@@ -1,5 +1,6 @@
 #include <GLFW/glfw3.h>
 
+// https://www.glfw.org/documentation.html
 viod GlfwTestCode();
 
 int main()
