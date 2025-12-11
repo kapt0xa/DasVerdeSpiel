@@ -10,9 +10,13 @@ Bullet Physics or NVIDIA PhysX for physics
 
 GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
     open .gitirnore and ctrl+F(glfw). whats where the include folder should be. include itseld doesnt split into x64 and x86, it has .h files directly
-    for linux u need to compile the stuff:
-        first fount tutorial: https://www.youtube.com/watch?v=xk5Kw6frDG4
-        required for GLFW components:
-        sudo apt install build-essential // U might already have, its c/c++ compilers and makefiles
-        sudo apt install cmake // U might already have it
-        sudo apt install xorg-dev
+    tutorial:
+        https://www.glfw.org/docs/latest/quick.html,
+        https://www.glfw.org/docs/latest/compile.html,
+        glfw's readme: Ctrl+F(Compiling)
+    reference actions:
+        on ubuntu i followed the tutorial of building the lib https://www.glfw.org/docs/latest/compile.html
+        i built files into folder {project root path}/glfw-3.4/build
+        
+        (not done yet)
+        after i build the lib, i read "building applications" https://www.glfw.org/docs/latest/build_guide.html 
