@@ -1,1 +1,5 @@
+# OpenGL or GLFW lib
 glfw-3.4
+
+# built files
+build
