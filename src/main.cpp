@@ -1,14 +1,14 @@
 #include <GLFW/glfw3.h>
 
 // https://www.glfw.org/documentation.html
-viod GlfwTestCode();
+int GlfwTestCode();
 
 int main()
 {
-    GlfwTestCode();
+    return GlfwTestCode();
 }
 
-viod GlfwTestCode()
+int GlfwTestCode()
 {
     GLFWwindow* window;
 
@@ -41,4 +41,6 @@ viod GlfwTestCode()
     }
 
     glfwTerminate();
+
+    return 0;
 }
