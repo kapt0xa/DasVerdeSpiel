@@ -19,4 +19,6 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         i built files into folder {project root path}/glfw-3.4/build
         
         (not done yet)
-        after i build the lib, i read "building applications" https://www.glfw.org/docs/latest/build_guide.html 
+        after i build the lib, i read "building applications" https://www.glfw.org/docs/latest/build_guide.html
+
+        somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
