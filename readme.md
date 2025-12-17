@@ -25,6 +25,9 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
 
 GLEW 2.1.0 https://glew.sourceforge.net/
+    download source .zip
+    unzip
+    run makefile ("make" in terminal in the folder of glew)
     (not done yet)
     read about building with GNU make https://glew.sourceforge.net/advanced.html
 
