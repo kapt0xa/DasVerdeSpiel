@@ -1,15 +1,18 @@
 # Das verde Spiel
 
+```
 OpenGL for 3d-graphics
 tutorial:
 https://www.youtube.com/watch?v=OR4fNpBjmq8&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=2
-!!! glew learn about it
 
 Bullet Physics or NVIDIA PhysX for physics
+```
 
 # Modules
 
 GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
+
+```
     open .gitirnore and ctrl+F(glfw). whats where the include folder should be. include itseld doesnt split into x64 and x86, it has .h files directly
     tutorial:
         https://www.glfw.org/docs/latest/quick.html,
@@ -23,11 +26,14 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         after i build the lib, i read "building applications" https://www.glfw.org/docs/latest/build_guide.html
 
         somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
+```
 
 GLEW 2.1.0 https://glew.sourceforge.net/
-    download source .zip
-    unzip
-    run makefile ("make" in terminal in the folder of glew)
-    (not done yet)
-    read about building with GNU make https://glew.sourceforge.net/advanced.html
 
+```
+    read cmakelists.txt, there is written something about GLEW installation issues
+    by default try this:
+    documentation: https://glew.sourceforge.net/install.html
+    use 'sudo make install' to run makefile provided by glew lib and install the lib.
+    it will be available for the cmake's find_package
+```
