@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.16)
+# glue: minimum cmake version is 3.16: https://github.com/nigels-com/glew/blob/master/README.md
 
 project(DasVerdeSpiel C CXX)
 
