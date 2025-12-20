@@ -28,7 +28,7 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
 ```
 
-GLEW 2.1.0 https://glew.sourceforge.net/ (abanded)
+GLEW 2.1.0 https://glew.sourceforge.net/
 
 ```
     can not install. because even if i proceed documentation, GL/glu.h can not be found.
@@ -38,4 +38,7 @@ GLEW 2.1.0 https://glew.sourceforge.net/ (abanded)
     documentation: https://glew.sourceforge.net/install.html
     use 'sudo make install' to run makefile provided by glew lib and install the lib.
     it will be available for the cmake's find_package
+
+    !!! i got some problems with GL/glu.h (didnt exist)
+    but somehow i fixed the issues with "sudo apt install libglu1-mesa-dev"
 ```
