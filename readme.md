@@ -39,6 +39,8 @@ GLEW 2.1.0 https://glew.sourceforge.net/
     use 'sudo make install' to run makefile provided by glew lib and install the lib.
     it will be available for the cmake's find_package
 
+    for ubuntu - install additional libs via "sudo apt install ..." as in offitial documentation
+
     !!! i got some problems with GL/glu.h (didnt exist)
     but somehow i fixed the issues with "sudo apt install libglu1-mesa-dev"
 ```
