@@ -23,7 +23,7 @@ target_link_libraries(DFS glfw)
 find_package(OpenGL REQUIRED)
 target_link_libraries(DFS OpenGL::GL)
 
-# abanded because 
+# abanded
 # GLEW
 # if find_package fails, and U dont want to install GLEW system-wide,
 # download GLEW and compole the lib via makefile it provides,
