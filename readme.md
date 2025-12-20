@@ -28,9 +28,11 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
 ```
 
-GLEW 2.1.0 https://glew.sourceforge.net/
+GLEW 2.1.0 https://glew.sourceforge.net/ (abanded)
 
 ```
+    can not install. because even if i proceed documentation, GL/glu.h can not be found.
+
     read cmakelists.txt, there is written something about GLEW installation issues
     by default try this:
     documentation: https://glew.sourceforge.net/install.html
