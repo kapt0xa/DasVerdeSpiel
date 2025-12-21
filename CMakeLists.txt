@@ -24,11 +24,11 @@ find_package(OpenGL REQUIRED)
 target_link_libraries(DFS OpenGL::GL)
 
 # abanded
-# GLEW
-# if find_package fails, and U dont want to install GLEW system-wide,
-# download GLEW and compole the lib via makefile it provides,
-# then use set(GLEW_ROOT "/path/to/glew/build/") before find_package
-# GLEW tutorial: https://glew.sourceforge.net/build.html
-find_package(GLEW REQUIRED)
-target_include_directories(DFS PRIVATE ${GLEW_INCLUDE_DIRS})
-target_link_libraries(DFS GLEW::GLEW)
+# # GLEW
+# # if find_package fails, and U dont want to install GLEW system-wide,
+# # download GLEW and compole the lib via makefile it provides,
+# # then use set(GLEW_ROOT "/path/to/glew/build/") before find_package
+# # GLEW tutorial: https://glew.sourceforge.net/build.html
+# find_package(GLEW REQUIRED)
+# target_include_directories(DFS PRIVATE ${GLEW_INCLUDE_DIRS})
+# target_link_libraries(DFS GLEW::GLEW)

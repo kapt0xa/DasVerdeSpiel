@@ -29,7 +29,8 @@ GLFW 3.4 https://www.glfw.org/ https://github.com/glfw/glfw
         somehow it worked on ubuntu, i didnt write down exact steps. now i dont remember.
 ```
 
-GLEW 2.1.0 https://glew.sourceforge.net/
+GLEW 2.1.0 https://glew.sourceforge.net/ 
+aaah NVM i abanden this. i will use GLFW only for graphics 
 
 ```
     can not install. because even if i proceed documentation, GL/glu.h can not be found.
