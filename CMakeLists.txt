@@ -18,10 +18,16 @@ set(CMAKE_C_EXTENSIONS OFF) # Disable compiler-specific extensions
 set(GLFW_DIR "${PROJECT_SOURCE_DIR}/glfw-3.4")
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 
+#my glfw files
+set(MY_GLFW 
+    "${SRC_DIR}/my_GLFW/glfw.h"
+    "${SRC_DIR}/my_GLFW/glfw.cpp"
+)
+
 # by GLFW tutorial
 add_subdirectory(${GLFW_DIR})
 
-add_executable(DFS ${SRC_DIR}/main.cpp)
+add_executable(DFS ${SRC_DIR}/main.cpp ${MY_GLFW})
 
 target_link_libraries(DFS glfw)
 
