@@ -89,6 +89,23 @@ public:
         glfwDestroyWindow(window);
         glfwTerminate();
     }
+    inline bool Loop(std::function<void()> renderCallback)
+    {
+        if(glfwWindowShouldClose(window))
+            {return false;}
+        glClear(GL_COLOR_BUFFER_BIT);
+        glBegin(GL_TRIANGLES);
+            renderCallback();
+        glEnd();
+
+        /* Swap front and back buffers */
+        glfwSwapBuffers(window);
+
+        /* Poll for and process events */
+        glfwPollEvents();
+
+        return true;
+    }
 
     GLFW(const GLFW&) = delete;
     GLFW& operator=(const GLFW&) = delete;
