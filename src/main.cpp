@@ -35,9 +35,11 @@ int GlfwTestCode()
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
-    if(glewInit() != GLEW_OK)
+    int debug_buf;
+    if((debug_buf = glewInit()) != GLEW_OK)
     {
         std::cerr << "Error initializing GLEW!" << std::endl;
+        std::cerr << debug_buf << std::endl;
         return -1;
     }
 
