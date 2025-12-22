@@ -1,6 +1,10 @@
 #include "my_GLFW/glfw.h"
 
+#include <vector>
+
 int GlfwTestCode();
+
+;
 
 int main()
 {

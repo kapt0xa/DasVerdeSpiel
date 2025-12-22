@@ -46,3 +46,8 @@ aaah NVM i abanden this. i will use GLFW only for graphics
     !!! i got some problems with GL/glu.h (didnt exist)
     but somehow i fixed the issues with "sudo apt install libglu1-mesa-dev"
 ```
+
+BOOST:QVM https://github.com/boostorg/qvm/tree/develop
+```
+    place boost lib as in gitignore
+```

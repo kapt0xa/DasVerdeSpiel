@@ -3,6 +3,11 @@ cmake_minimum_required(VERSION 3.16)
 
 project(DasVerdeSpiel C CXX)
 
+# check this paths:
+set(GLFW_DIR "${PROJECT_SOURCE_DIR}/glfw-3.4")
+set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
+set(BOOST_QVM_DIR "${PROJECT_SOURCE_DIR}/qvm-develop")
+
 # Set the C++ standard to C++20
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -14,9 +19,6 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 set(CMAKE_C_EXTENSIONS OFF) # Disable compiler-specific extensions
 
 # official GLFW tutorial https://www.glfw.org/docs/latest/build_guide.html
-
-set(GLFW_DIR "${PROJECT_SOURCE_DIR}/glfw-3.4")
-set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 
 #my glfw files
 set(MY_GLFW 
@@ -48,6 +50,9 @@ target_link_libraries(DFS OpenGL::GL)
 # find_package(GLEW REQUIRED)
 # target_include_directories(DFS PRIVATE ${GLEW_INCLUDE_DIRS})
 # target_link_libraries(DFS GLEW::GLEW)
+
+# boost QVM
+target_include_directories(DFS ${BOOST_QVM_DIR}/include)
 
 # Stricter warning settings
 if(MSVC)  # For Microsoft Visual Studio
