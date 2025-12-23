@@ -22,8 +22,8 @@ set(CMAKE_C_EXTENSIONS OFF) # Disable compiler-specific extensions
 
 #my glfw files
 set(MY_GLFW 
-    "${SRC_DIR}/my_GLFW/glfw.h"
-    "${SRC_DIR}/my_GLFW/glfw.cpp"
+    "${SRC_DIR}/glfw.h"
+    "${SRC_DIR}/glfw.cpp"
 )
 
 # by GLFW tutorial
@@ -52,7 +52,8 @@ target_link_libraries(DFS OpenGL::GL)
 # target_link_libraries(DFS GLEW::GLEW)
 
 # boost QVM
-target_include_directories(DFS ${BOOST_QVM_DIR}/include)
+message(debug purpose: ${BOOST_QVM_DIR}/include/)
+target_include_directories(DFS PRIVATE ${BOOST_QVM_DIR}/include)
 
 # Stricter warning settings
 if(MSVC)  # For Microsoft Visual Studio

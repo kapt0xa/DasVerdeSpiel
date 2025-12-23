@@ -37,7 +37,7 @@ public:
         glfwDestroyWindow(window);
         glfwTerminate();
     }
-    inline bool Loop(std::function<void()> renderCallback)
+    inline bool Loop(const std::function<void()> renderCallback)
     {
         if(glfwWindowShouldClose(window))
             {return false;}
